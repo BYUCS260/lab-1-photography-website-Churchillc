@@ -33,24 +33,9 @@ img {
   align-items: center;
 }
 
-.text {
-  width:300px;
-  padding: 10px;
-}
 
-.masonry { /* Masonry container */
-  column-count: 3;
-  column-gap: 1em;
-  margin: 1.5em auto;
-  column-gap: 1.5em;
-}
 
-.item { /* Masonry bricks or child elements */
-  background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
+
 
 html {
   box-sizing: border-box;
@@ -66,4 +51,61 @@ html {
   margin-left: auto;
   margin-right: auto;
   width:75%
+}
+
+.footer{
+  display: flex;
+  background-color: #ffadad;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100px
+}
+
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.spacer{
+  height: 60px;
+}
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+
+
+@media only screen and (min-width: 961px) {
+  .masonry {
+    column-count: 3;
+    column-gap: 1em;
+    margin: 1.5em auto;
+    column-gap: 1.5em;
+  }
+
+  .item {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+
+  .text {
+    width:300px;
+    padding: 10px;
+  }
+
 }
